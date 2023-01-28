@@ -1,0 +1,100 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noUncheckedIndexedAccess": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/env/*": [
+        "./src/env/*"
+      ],
+      "@/client-env": [
+        "./src/env/client.mjs"
+      ],
+      "@/server-env": [
+        "./src/env/server.mjs"
+      ],
+      "@/components/*": [
+        "./src/client/components/*"
+      ],
+      "@/hooks/*": [
+        "./src/client/hooks/*"
+      ],
+      "@/store": [
+        "./src/client/store"
+      ],
+      "@/layouts/*": [
+        "src/client/layouts/*"
+      ],
+      "@/pages/*": [
+        "./src/pages/*"
+      ],
+      "@/styles/*": [
+        "./src/styles/*"
+      ],
+      "@/utils/*": [
+        "./src/utils/*"
+      ],
+      "@/api": [
+        "./src/utils/api"
+      ],
+      "@/errors": [
+        "./src/utils/errors"
+      ],
+      "@/logger": [
+        "./src/utils/logger"
+      ],
+      "@/limiter": [
+        "./src/utils/limiter"
+      ],
+      "@/server/*": [
+        "./src/server/*"
+      ],
+      "@/db": [
+        "./src/server/db/prisma"
+      ],
+      "@/schemas/*": [
+        "./src/schemas/*"
+      ],
+      "@/constants/*": [
+        "./src/constants/*"
+      ],
+      "@/themes/*": [
+        "./src/themes/*"
+      ],
+      "@/types/*": [
+        "./src/types/*"
+      ],
+    },
+  },
+  "include": [
+    "next-env.d.ts",
+    "types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.mjs"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
